@@ -1,0 +1,27 @@
+# ─────────────────────────────────────────────────────────────
+#  Sparse Neural Network for CERN CMS Jet Classification
+#  Requirements — Tesla T4, CUDA 13.0, Driver 580.126.09
+# ─────────────────────────────────────────────────────────────
+#
+#  Install in this exact order:
+#
+#  Step 1 — PyTorch (CUDA 12.x wheel works on CUDA 13.0):
+#      pip install torch torchvision --index-url https://download.pytorch.org/whl/cu121
+#
+#  Step 2 — spconv (cu120 is the highest build, compatible with CUDA 13.0):
+#      pip install spconv-cu120
+#
+#  Step 3 — everything else:
+#      pip install -r requirements.txt
+#
+# ─────────────────────────────────────────────────────────────
+
+# ── Data ─────────────────────────────────────────────────────
+h5py>=3.8.0
+numpy>=1.24.0
+
+# ── Plotting ─────────────────────────────────────────────────
+matplotlib>=3.7.0
+
+# ── Utilities ────────────────────────────────────────────────
+tqdm>=4.65.0
